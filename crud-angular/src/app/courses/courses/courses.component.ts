@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Course } from '../models/course';
 
 @Component({
   selector: 'app-courses',
@@ -7,12 +8,14 @@ import { Component } from '@angular/core';
 })
 export class CoursesComponent {
 
-  courses: any[] = [];
+  courses: Course[];
 
-  constructor () {}
+  constructor () {
+    this.courses = [];
+  }
 
   ngOnInit(): void {
-    
+
   }
 
 }
