@@ -9,6 +9,7 @@ import { Course } from '../models/course';
 export class CoursesComponent {
 
   courses: Course[];
+  displayedColumns = ['name','category'];
 
   constructor () {
     this.courses = [];
