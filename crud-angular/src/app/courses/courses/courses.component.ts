@@ -8,11 +8,12 @@ import { Course } from '../models/course';
 })
 export class CoursesComponent {
 
-  courses: Course[];
+  courses: Course[] = [
+    { _id: "1", name: 'ANgular', category: 'Front-end'}
+  ];
   displayedColumns = ['name','category'];
 
   constructor () {
-    this.courses = [];
   }
 
   ngOnInit(): void {
